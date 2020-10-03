@@ -1,0 +1,6 @@
+package com.zycus.otherProblem3;
+
+public class Z implements X<Integer> {
+    // Implement interface X for integer operations
+    
+}

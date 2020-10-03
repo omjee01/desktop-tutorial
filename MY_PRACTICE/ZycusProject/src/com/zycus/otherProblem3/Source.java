@@ -1,0 +1,29 @@
+package com.zycus.otherProblem3;
+
+import java.util.Scanner;
+
+public class Source {
+
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        int t = in.nextInt();
+        MyClass solver = new MyClass();
+        while (t-- > 0) {
+            int m = in.nextInt();
+            int n = in.nextInt();
+            
+            System.out.println(solver.solve(m, n));
+        }
+    }
+}
+
+
+class M {
+    // Implement interface X for matrix operations
+    // Must use Z for all modulo operations, if applicable
+}
+
+class Matrix {
+    // Declare a 2D ( r * c ) integer matrix
+    // Use proper data structure 
+}
