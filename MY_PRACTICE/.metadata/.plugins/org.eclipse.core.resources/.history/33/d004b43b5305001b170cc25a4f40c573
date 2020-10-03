@@ -1,0 +1,24 @@
+package com.zycus.otherProblem3;
+
+class MyClass {
+
+	int solve(int m, int n) {
+		int sum = 0;
+		// Return sum of f[m] + f[m+1] + … f[n]
+		// Should use classes whichever are required
+		int sum = 0;
+		for (int i = m; i <= n; i++)
+			sum = sum + seq(n);
+	}
+
+	static int seq(int m, int n) {
+		if (n == 0 || n == 1 || n == 2 && n >= m)
+			return 0;
+
+		if (n == 3)
+			return 1;
+		else
+			return MyClass.seq(n) + MyClass.seq(n - 1) + MyClass.seq(n - 2);
+	}
+
+}
