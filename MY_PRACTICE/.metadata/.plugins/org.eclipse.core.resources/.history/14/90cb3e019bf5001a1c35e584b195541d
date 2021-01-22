@@ -1,0 +1,14 @@
+package com.avinash.java8;
+
+import java.util.function.Function;
+
+public class Test1 implements FunctInterf{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "Avinas";
+		FunctInterf f= s->s;
+		System.out.println(f.print(s));
+	}
+
+}
