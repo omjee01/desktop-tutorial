@@ -1,0 +1,5 @@
+package com.avinash.java8;
+
+public interface FunctInterf {
+
+}

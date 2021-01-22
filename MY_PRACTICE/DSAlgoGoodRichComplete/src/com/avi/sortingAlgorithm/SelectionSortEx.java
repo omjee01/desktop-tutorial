@@ -1,0 +1,46 @@
+package com.avi.sortingAlgorithm;
+
+import java.util.Scanner;
+
+public class SelectionSortEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner (System.in);
+		
+		int x = sc.nextInt();
+		int [] arr = new int[x];
+		for (int i = 0; i<x; i++){
+			arr[i]=sc.nextInt();
+		}
+		
+		for(int i=arr.length-1; i>=0; i--){
+			int largest=0;
+			for(int j=1; j<i; j++){
+				
+				if(arr[largest] < arr[j]){
+					largest = j;
+				}
+			}	
+			selectAndSwap(arr, largest, i);
+		}
+		
+		for (int i = 0; i<x; i++){
+			System.out.println(arr[i]+"\t");
+		}
+
+	}
+	
+	public static void selectAndSwap(int arr[],int i,int j){
+		if(arr[i]==arr[j]){
+			return;
+		}
+		else{
+			int temp = arr[i];
+			arr[i] = arr[j];
+			arr[j] = temp;
+		}
+	}
+
+}

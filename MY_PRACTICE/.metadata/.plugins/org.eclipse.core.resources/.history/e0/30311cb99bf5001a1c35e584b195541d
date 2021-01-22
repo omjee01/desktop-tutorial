@@ -1,0 +1,14 @@
+package com.avinash.java8;
+
+import java.util.function.Function;
+
+public class Test1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String s = "Avinash";
+		()-> System.out.println("Avinash");
+		
+	}
+
+}
