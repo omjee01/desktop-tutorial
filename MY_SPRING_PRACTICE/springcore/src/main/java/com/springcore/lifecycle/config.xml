@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+ 	http://www.springframework.org/schema/beans/spring-beans.xsd
+ 	http://www.springframework.org/schema/context
+ 	http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config/>
+	<!-- Implementing Spring life-cycle methods i.e. init() and destroy() using xml configuration -->
+ 	<bean class="com.springcore.lifecycle.Samosa" name="s1"
+ 	init-method="init" destroy-method="destroy">
+ 		<property name="price" value="10"/>
+ 	</bean>
+ 	
+ 	
+ 	<!-- Implementing Spring life-cycle methods i.e. init() and destroy() using Spring interfaces i.e. InitializingBean (i) and DisposibleBean(I) -->
+ 	<bean class="com.springcore.lifecycle.Home" name="home">
+ 		<property name="price" value="12343434"/>
+ 	</bean>
+ 	
+ 	<!-- Implementing Spring life-cycle methods i.e. init() and destroy() using Spring annotation i.e.@postConstruct and @preDestroy -->
+ 	<bean class="com.springcore.lifecycle.AnnotExample" name="annot">
+ 		<property name="subject" value="Computer Science"/>
+ 	</bean>
+ 	
+</beans>
