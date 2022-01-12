@@ -13,7 +13,7 @@
 
 	<properties>
 		<jdk.version>1.8</jdk.version>
-		<spring.version>5.3.3</spring.version>
+		<spring.version>5.3.14</spring.version>
 		<spring.batch.version>4.3.1</spring.batch.version>
 		<mysql.driver.version>8.0.18</mysql.driver.version>
 		<junit.version>4.13.1</junit.version>
